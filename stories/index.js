@@ -1,6 +1,8 @@
 import React from "react";
 import { storiesOf } from "@storybook/react";
 import "../node_modules/bootstrap/dist/css/bootstrap.css";
+import MovieCard from "../src/components/movieCard";
+import FilterControls from "../src/components/filterControls";
 
 const sample = {
   adult: false,
@@ -83,3 +85,12 @@ const sample = {
   vote_count: 9692
 };
 
+storiesOf("Home Page/MovieCard", module)
+  .add("default", () => <MovieCard movie={sample} />)
+  .add("exception", () => {
+    const sampleNoPoster = { ...sample, poster_path: undefined };
+    return <MovieCard movie={sampleNoPoster} />;
+});
+
+storiesOf("Home Page/FilterControls", module)
+  .add("default", () => <FilterControls /> )
