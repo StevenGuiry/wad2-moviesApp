@@ -66,10 +66,6 @@ const sample = {
     {
       iso_3166_1: "US",
       name: "United States of America"
-    },
-    { //I entered this!
-      iso_3166_1:"CAN",
-      name: "Canada"
     }
   ],
   release_date: "2017-12-13",
