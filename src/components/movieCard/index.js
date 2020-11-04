@@ -1,8 +1,8 @@
 import React from "react";
 import "./movieCard.css";
+import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "../../globals/fontawesome";
-import { Link } from "react-router-dom";
 
 const MovieCard = props => {
 
@@ -10,7 +10,6 @@ const MovieCard = props => {
     e.preventDefault()
     props.buttonHandler(props.movie.id)  // new line
   }
-
   return (
     <div className="col-sm-3">
       <div className="card  bg-white">
@@ -22,7 +21,7 @@ const MovieCard = props => {
               props.movie.poster_path
                 ? `https://image.tmdb.org/t/p/w500/${props.movie.poster_path}`
                 : "./film-poster-placeholder.png"
-           }
+            }
           />
         </Link>
         <div className="card-body">
@@ -46,4 +45,4 @@ const MovieCard = props => {
   );
 };
 
-export default MovieCard ;
+export default MovieCard;
