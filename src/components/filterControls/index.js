@@ -7,7 +7,7 @@ const FilterControls = props => {
   useEffect(() => {
     fetch(
       "https://api.themoviedb.org/3/genre/movie/list?api_key=" +
-        process.env.REACT_APP_TMDB_KEY
+      process.env.REACT_APP_TMDB_KEY
     )
       .then(res => res.json())
       .then(json => json.genres)
@@ -28,27 +28,27 @@ const FilterControls = props => {
   };
 
   return (
-      <div className="row bg-warning">
-        <div className="col-md-12">
-          <h4>
-            <span>List Filtering:</span>
-            <input
-              type="text"
-              placeholder="Title Search"
-              onChange={handleTextChange}
-            />
+    <div className="row bg-warning">
+      <div className="col-md-12">
+        <h4>
+          <span>List Filtering:</span>
+          <input
+            type="text"
+            placeholder="Title Search"
+            onChange={handleTextChange}
+          />
           <select id="genre" onChange={handleGenreChange}>
-              {genres.map(genre => {
-                return (
-                  <option key={genre.id} value={genre.id}>
-                    {genre.name}
-                  </option>
-                );
-              })}
+            {genres.map(genre => {
+              return (
+                <option key={genre.id} value={genre.id}>
+                  {genre.name}
+                </option>
+              );
+            })}
           </select>
-         </h4>
-        </div>
+        </h4>
       </div>
+    </div>
   );
 };
 
