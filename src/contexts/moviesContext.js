@@ -1,5 +1,7 @@
+import { faWindowRestore } from "@fortawesome/free-solid-svg-icons";
 import React, { useEffect, createContext, useReducer } from "react";
-import { getMovies } from "../api/tmdb-api";
+import { getMovies, getUpcomingMovies } from "../api/tmdb-api";
+import UpcomingMovieListPage from "../pages/upcomingMoviesPage";
 
 export const MoviesContext = createContext(null);
 
@@ -36,12 +38,22 @@ const MoviesContextProvider = (props) => {
 
   const addReview = (movie, review) => {
     dispatch({ type: "add-review", payload: { movie, review } });
-  }; 
+  };
+
   useEffect(() => {
-    getMovies().then((movies) => {
-      dispatch({ type: "load", payload: { movies } });
-    });
-    // eslint-disable-next-line react-hooks/exhaustive-deps
+
+      getMovies().then((movies) => {
+        dispatch({ type: "load", payload: { movies } });
+      });
+    
+  }, []);
+
+
+  useEffect(() => {
+      getUpcomingMovies().then((movies) => {
+        dispatch({ type: "load", payload: { movies } });
+      });
+      // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return (
