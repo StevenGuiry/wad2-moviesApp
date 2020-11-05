@@ -7,10 +7,11 @@ import MoviePage from './pages/movieDetailsPage'
 import { BrowserRouter, Route, Redirect, Switch, Link } from "react-router-dom"
 import FavoritesMoviesPage from './pages/favoritesMoviesPage'
 import MovieReviewPage from "./pages/movieReviewPage";
+import AddMovieReviewPage from './pages/addMovieReviewPage';
 import SiteHeader from './components/siteHeader';
 import MoviesContextProvider from "./contexts/moviesContext";
 import GenresContextProvider from "./contexts/genresContext";
-import AddMovieReviewPage from './pages/addMovieReviewPage';
+
 
 const App = () => {
   return (
@@ -21,10 +22,10 @@ const App = () => {
           <MoviesContextProvider>
             <GenresContextProvider>
               <Switch>
+              <Route exact path="/reviews/form" component={AddMovieReviewPage} />
                 <Route path="/reviews/:id" component={MovieReviewPage} />
                 <Route exact path="/movies/favorites" component={FavoritesMoviesPage} />
                 <Route exact path="/movies/upcoming" component={UpcomingMoviesPage} />
-                <Route exact path="/reviews/form" component={AddMovieReviewPage} />
                 <Route path="/movies/:id" component={MoviePage} />
                 <Route path="/" component={HomePage} />
                 <Redirect from="*" to="/" />

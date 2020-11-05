@@ -21,8 +21,8 @@ const reducer = (state, action) => {
             : m
         ),
       };
-    // default:
-    //   return state;
+    default:
+      return state;
   }
 };
 
