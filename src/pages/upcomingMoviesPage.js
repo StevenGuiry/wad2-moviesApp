@@ -1,8 +1,7 @@
 import React, { useContext } from "react";
 import PageTemplate from '../components/templateMovieListPage';
-import { MoviesContext } from '../contexts/moviesContext'
-import AddToWatchlistButton from '../components/buttons/addToWatchlist'
-
+import { MoviesContext } from '../contexts/moviesContext';
+import AddToWatchlistButton from '../components/buttons/addToWatchlist';
 
 const UpcomingMovieListPage = () => {
   const context = useContext(MoviesContext);
