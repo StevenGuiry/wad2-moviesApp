@@ -1,10 +1,8 @@
 .table_outer { 
     height: 25em; overflow: auto;
-    padding-bottom: 15px;
-    padding-top: 15px;
-    margin-top: 15px;
+    margin-top: 4%;
     margin-bottom: 50px;
-    margin-right: 50em;
+    margin-right: 50%;
 }
 .col_one {
     width: 4em;

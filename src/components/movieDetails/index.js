@@ -60,7 +60,9 @@ export default ({ movie }) => {
             {pnc.name}
           </li>
         ))}
+        
       </ul>
+      <hr className='hr'></hr>
     </>
   );
 };
