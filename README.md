@@ -69,7 +69,7 @@ Used some react-bootstrap features such as the thumbnail image used to display t
 ---------------------------------
 
 [model]: ./data.jpg
-[movieDetail]: ./public/movieDetail.png
+[movieDetail]: ./public/credits-trailer_view.png
 [review]: ./public/review.png
 [reviewLink]: ./public/reviewLink.png
 [cardLink]: ./public/cardLink.png
