@@ -8,8 +8,8 @@ The following are the user features in which I have added.
  
  + Feature 1 - The cast of each movie is now displayed in the movie details page. The actors/actresses picture, the name of the actor/actress and the name of the character in which they played in the specific movie are displayed in table format.
  + Feature 2 - The trailer of the movie is displayed on the movie details page. The trailer is embedded so the user can watch the trailer (in full screen if they wish) without leaving the web app. 
- + Feature 3 = Added a new page that displays the top 20 rated movies of all time. This new page is accessed from any of the views via the site header.
- + etc
+ + Feature 3 - Added a new page that displays the top 20 rated movies of all time. This new page is accessed from any of the views via the site header.
+ + Feature 4 - Added a new page that displays the movies that are now playing in the cinemas. This new page is accessed via the site header.
  + etc
 
 ## Setup requirements (If required).
@@ -23,6 +23,7 @@ I installed react-bootstrap to display the images in thumbnail format but this d
 + https://api.themoviedb.org/3/movie/${id}/credits - lists the cast of the specific movie.
 + https://api.themoviedb.org/3/movie/${id}/videos - retrieves the movie trailer.
 + https://api.themoviedb.org/3/movie/top_rated - retrieves the top 20 rated movies of all time. 
++ https://api.themoviedb.org/3/movie/now_playing - lists the movies in cinemas at the moment.
 
 ## App Design.
 
@@ -41,6 +42,9 @@ I installed react-bootstrap to display the images in thumbnail format but this d
 
 ![][topRated]
 >Shows the new top rated movie view.
+
+![][nowPlaying]
+>Shows the new movie view, now playing.
 
 ## Routing.
 
@@ -75,3 +79,4 @@ Used some react-bootstrap features such as the thumbnail image used to display t
 [cardLink]: ./public/cardLink.png
 [stories]: ./public/storybook.png
 [topRated]: ./public/topRatedView.png
+[nowPlaying]: ./public/nowplayingView.png
