@@ -39,8 +39,8 @@ I installed react-bootstrap to display the images in thumbnail format but this d
 ![][movieDetail]
 >Shows detailed information on a movie. Clicking the 'Show Reviews' button will display extracts from critic reviews. The entire cast of the movie is displayed, scroll down to view all the cast members. The movie trailer is also present for the user to watch. The trailer can also be played in full screen.
 
-![][review]
->Shows the full text for a movie review. 
+![][topRated]
+>Shows the new top rated movie view.
 
 ## Routing.
 
@@ -74,3 +74,4 @@ Used some react-bootstrap features such as the thumbnail image used to display t
 [reviewLink]: ./public/reviewLink.png
 [cardLink]: ./public/cardLink.png
 [stories]: ./public/storybook.png
+[topRated]: ./public/topRatedView.png
