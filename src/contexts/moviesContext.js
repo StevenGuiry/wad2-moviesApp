@@ -10,8 +10,8 @@ const reducer = (state, action) => {
         movies: state.movies.map((m) =>
           m.id === action.payload.movie.id ? { ...m, favorite: true } : m
         ),
-        toprated: state.toprated.map((m) =>
-          m.id === action.payload.movie.id ? { ...m, favorite: true } : m
+        toprated: state.toprated.map((t) =>
+          t.id === action.payload.movie.id ? { ...t, favorite: true } : t
         ),
         upcoming: [...state.upcoming],
       };
