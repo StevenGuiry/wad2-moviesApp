@@ -8,7 +8,7 @@ The following are the user features in which I have added.
  
  + Feature 1 - The cast of each movie is now displayed in the movie details page. The actors/actresses picture, the name of the actor/actress and the name of the character in which they played in the specific movie are displayed in table format.
  + Feature 2 - The trailer of the movie is displayed on the movie details page. The trailer is embedded so the user can watch the trailer (in full screen if they wish) without leaving the web app. 
- + Feature 3 = ......
+ + Feature 3 = Added a new page that displays the top 20 rated movies of all time. This new page is accessed from any of the views via the site header.
  + etc
  + etc
 
@@ -21,7 +21,8 @@ I installed react-bootstrap to display the images in thumbnail format but this d
 ..... List the additional TMDB endpoints used in your assignment, e.g.
 
 + https://api.themoviedb.org/3/movie/${id}/credits - lists the cast of the specific movie.
-+ https://api.themoviedb.org/3/movie/${id}/videos - display the movie trailer.
++ https://api.themoviedb.org/3/movie/${id}/videos - retrieves the movie trailer.
++ https://api.themoviedb.org/3/movie/top_rated - retrieves the top 20 rated movies of all time. 
 
 ## App Design.
 
@@ -45,8 +46,7 @@ I installed react-bootstrap to display the images in thumbnail format but this d
 
 ...... Insert a list of the additional routes supported by your Movies Fan app. If relevant, specify which of the routes require authentication, i.e. protected/private.
 
-+ /movies/favorites (protected) - displays the user's favorite movies selection.
-+ /reviews/:id (public) - displays the full text of a movie review.
++ /movies/toprated - displays thetop rated movies on TMDB.
 + etc.
 + etc.
 
