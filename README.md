@@ -50,8 +50,8 @@ I installed react-bootstrap to display the images in thumbnail format but this d
 
 ...... Insert a list of the additional routes supported by your Movies Fan app. If relevant, specify which of the routes require authentication, i.e. protected/private.
 
-+ /movies/toprated - displays thetop rated movies on TMDB.
-+ etc.
++ /movies/toprated - displays the top rated movies on TMDB.
++ /movies/nowplaying - displays the movies that are currently in cinemas. 
 + etc.
 
 ### Data hyperlinking.
